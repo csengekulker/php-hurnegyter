@@ -17,6 +17,7 @@ function calcArea ($a, $b, $c, $d) {
     return $area;
 }
 
+
 if (
     !empty($_GET['a']) and
     !empty($_GET['b']) and
