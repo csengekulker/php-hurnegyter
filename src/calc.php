@@ -4,8 +4,6 @@ echo file_get_contents('templates/head.html');
 echo file_get_contents('templates/nav.html');
 $page =  file_get_contents('templates/calc.html');
 
-//szamitas itt
-
 function calcArea ($a, $b, $c, $d) {
     $s = ($a + $b + $c + $d) / 2;
 
@@ -18,7 +16,7 @@ function calcArea ($a, $b, $c, $d) {
 
     return $area;
 }
-// ha nem uresek
+
 if (
     !empty($_GET['a']) and
     !empty($_GET['b']) and
@@ -42,4 +40,5 @@ if (
 
 echo $page;
 echo file_get_contents('templates/foot.html');
+
 ?>
